@@ -1,0 +1,287 @@
+A:link {text-decoration: none;}
+A:visited {text-decoration: none;}
+A:hover {text-decoration: none;}
+A:active {text-decoration: none;}
+
+body {overflow-y: hidden;}
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#ffffff;
+}
+
+main {
+    margin: 0 auto;
+    vertical-align: middle;
+    color:#39343F;
+    text-align:center;
+}
+
+
+
+.wrapper {
+    width:100%;
+    max-width:1150px;
+    overflow:hidden;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative;
+    max-height: 1200px;
+    margin-top: 5px;
+}
+
+svg {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+}
+
+
+.btn-arrow{
+    width:42px;
+    height:50px;
+    cursor:pointer;
+    background-color:#fa7d19;
+    background-size: contain;
+    z-index:100;
+}
+
+
+#btn-back {
+    background-image:url(../images/btn-arrow-back.png);
+    float:left;
+}
+
+#btn-back:hover {
+    background-image:url(../images/mo-arrow-back.png);
+}
+
+#btn-forward {
+    background-image:url(../images/btn-arrow-forward.png);
+    float:right;
+}
+
+#btn-forward:hover {
+    background-image:url(../images/mo-arrow-forward.png);
+}
+
+
+
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #FA7D19;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button.medium {
+    display: inline-block;
+    margin-top:2em;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.button.round {
+    border-radius: 4px;
+}
+
+.button.x-load-more {
+    margin: 0;
+}
+
+.button:hover,
+.button:focus {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.button:hover:not(.m-keyboardfocus),
+.button:focus:not(.m-keyboardfocus) {
+    outline: none;
+}
+
+.button.m-keyboardfocus:hover,
+.button.m-keyboardfocus:focus {
+    outline: #FA7D19 solid 2px;
+    outline-offset: 2px;
+}
+
+
+.source {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:0.9em;
+    color: #39343F;
+    font-size:0.9em;
+    width:90%;
+    max-width:1140px;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative;
+    margin-top:1em;
+
+}
+
+
+#d3-content {
+    width:380px;
+    font-size:16px;
+    line-height: 20px;
+}
+
+
+.land {
+    fill: #D4D5D5;
+    fill-opacity: 1;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+}
+
+.eu-land{
+	fill: #4286BE;
+    fill-opacity: 0.6;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+    cursor:pointer;
+	}
+
+.eu-land:hover {
+    fill-opacity: 1;
+}
+
+#land-headline {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    margin-top:5px;
+    float:left;
+}
+
+#land-description {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    float:left;
+    margin-top:5px;
+}
+
+.circletext {
+    color:#ffffff;
+    font-size:14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.circleyear {
+    color:#ffffff;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.description {
+    color:#ffffff;
+    pointer-events: none;
+    position: absolute;
+    top:100px;
+    left: 400px;
+    font-size: 14px;
+    line-height:14px;
+    text-align: left;
+    background-color: rgba(37, 41, 46, 0.8);
+    padding: 10px 15px;
+    z-index: 5;
+    height: 150px;
+    width:380px;
+    margin: 0 auto;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block;
+}
+
+
+/**** Media Queries: ****/
+
+/*mobile*/
+@media (max-width: 600px){
+
+    .btn-arrow {
+        width: 36px;
+        height: 44px;
+    }
+
+
+     .wrapper{
+         margin:0;
+         width:100%;
+     }
+
+     .source {
+        margin-top: 50px;
+    }
+
+    
+ }
+
+
+
+
+ /*tablet */
+@media (min-width:601px) and (max-width: 1000px) {
+
+    .wrapper{
+        margin:0;
+        width:100%;
+    }
+
+    .btn-arrow {
+        margin-top:-25%;
+    }
+
+    .btn-arrow-start {
+        margin-top:25%;
+    }
+
+ }
+
+
+   /*desktop*/
+@media (min-width: 1001px){
+
+    .btn-arrow {
+        margin-top:-25%;
+        visibility:hidden;
+    }
+
+    .btn-arrow-start {
+        margin-top:25%;
+    }
+
+
+ }
+
+ /* ie 10  hacks     */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    svg {
+        width:100%;
+        height:700px;
+    }
+
+    #d3-content {
+        margin-top:-255px;
+        display:inline-block;
+    }
+
+
+    .description {
+        width:380px;
+        opacity:0;
+    }
+    }
+}

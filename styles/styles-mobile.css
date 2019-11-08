@@ -1,0 +1,202 @@
+A:link {text-decoration: none;}
+A:visited {text-decoration: none;}
+A:hover {text-decoration: none;}
+A:active {text-decoration: none;}
+
+body {overflow-y: hidden;}
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#ffffff;
+}
+
+main {
+    margin: 0 auto;
+    vertical-align: middle;
+    color:#39343F;
+    text-align:center;
+}
+
+
+
+.wrapper {
+    width:100%;
+    max-width:1150px;
+    overflow:hidden;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative;
+    max-height: 5000px;
+    margin-top: 5px;
+}
+
+svg {
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+    margin-left:-35px;
+    margin-top:-20px;
+}
+
+
+.btn-arrow{
+    width:42px;
+    height:50px;
+    cursor:pointer;
+    background-color:#fa7d19;
+    background-size: contain;
+    z-index:100;
+}
+
+
+#btn-back {
+    background-image:url(../images/btn-arrow-back.png);
+    float:left;
+}
+
+#btn-back:hover {
+    background-image:url(../images/mo-arrow-back.png);
+}
+
+#btn-forward {
+    background-image:url(../images/btn-arrow-forward.png);
+    float:right;
+}
+
+#btn-forward:hover {
+    background-image:url(../images/mo-arrow-forward.png);
+}
+
+.source {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:0.9em;
+    color: #39343F;
+    font-size:0.9em;
+    width:90%;
+    max-width:1140px;
+    margin-right: auto;
+    margin-left: 3em;
+    position:relative;
+    margin-top:1em;
+
+}
+
+
+
+#d3-content {
+    width:auto;
+    max-width:400px;
+    font-size:16px;
+    line-height: 20px;
+    margin-left:50px;
+}
+
+
+.land {
+    fill: #D4D5D5;
+    fill-opacity: 1;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+}
+
+.eu-land{
+	fill: #4286BE;
+    fill-opacity: 0.6;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+    cursor:pointer;
+	}
+
+.eu-land:hover {
+    fill-opacity: 1;
+}
+
+.eu-land-selected {
+    fill: #4286BE;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+}
+
+#land-headline {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    margin-top:5px;
+    float:left;
+}
+
+#land-description {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    float:left;
+    margin-top:5px;
+}
+
+.circletext {
+    color:#ffffff;
+    font-size:14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.circleyear {
+    color:#ffffff;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.description {
+    color:#ffffff;
+    pointer-events: none;
+    font-size: 14px;
+    line-height:14px;
+    text-align: left;
+    background-color: rgba(37, 41, 46, 0.8);
+    padding: 10px 15px;
+    z-index: 5;
+    height: 150px;
+    width:auto;
+    margin-left:1em;
+    margin-top:-2em;
+    margin-bottom:1em;
+    margin-right:1em;
+   display:block;
+}
+
+
+
+
+/**** Media Queries: ****/
+
+/*mobile*/
+@media (max-width: 700px){
+
+    .btn-arrow {
+        width: 36px;
+        height: 44px;
+    }
+
+}
+
+
+ /* ie 10  hacks     */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    svg {
+        width:100%;
+        height:500px;
+    }
+
+    #d3-content {
+        margin-top:-155px;
+        width:300px;
+        margin-left:50px;
+    }
+
+    .btn-arrow {
+        visibility: visible;
+        margin-top:-25%;
+    }
+}
